@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 8
+names: ['Ficus benjamina', 'Ficus elastica', 'Golden-leaves Fig', 'Juniperus chinensis', 'Podocarpus macrophyllus', 'Tabebuia chrysantha', 'Terminalia mantaly', 'Travellers-tree']
+
+roboflow:
+  workspace: wus-workspace-wirdy
+  project: wus-workspace-wirdy
+  version: dataset
+  license: Private
+  url: https://app.roboflow.com/wus-workspace-wirdy/wus-workspace-wirdy/dataset
