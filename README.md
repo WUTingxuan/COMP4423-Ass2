@@ -8,6 +8,51 @@ This repository contains an example **SVM classification pipeline**.
 - `main.py`: Entry point to train the model with dataset parameters.
 - `dataset/`: Expected YOLOv8 dataset layout (`data.yaml`, `train/images`, `train/labels`).
 
+## Project Structure (Without Report Files)
+
+```text
+COMP4423-Ass2/
+|-- .git/
+|-- .vscode/
+|-- app.py
+|-- latest_train_output.txt
+|-- main.py
+|-- model/
+|-- requirements.txt
+|-- run_app.bat
+|-- src/
+|   |-- svm_model.py
+|   `-- __pycache__/
+|-- dataset/
+|   |-- data.yaml
+|   |-- README.roboflow.txt
+|   `-- train/
+|       |-- images/
+|       `-- labels/ (...)
+`-- README.md
+```
+
+```mermaid
+flowchart TD
+	A[COMP4423-Ass2] --> B[app.py]
+	A --> C[main.py]
+	A --> D[run_app.bat]
+	A --> E[requirements.txt]
+	A --> F[latest_train_output.txt]
+	A --> G[model/]
+	A --> H[src/]
+	A --> I[dataset/]
+	A --> J[.vscode/]
+	A --> K[.git/]
+	H --> H1[svm_model.py]
+	H --> H2[__pycache__/]
+	I --> I1[data.yaml]
+	I --> I2[README.roboflow.txt]
+	I --> I3[train/]
+	I3 --> I31[images/]
+	I3 --> I32[labels/ (...)]
+```
+
 ## Dataset Format
 
 This project now uses **YOLOv8 detection format** as input and converts it to image-level
