@@ -49,8 +49,8 @@ flowchart TD
 	I --> I1[data.yaml]
 	I --> I2[README.roboflow.txt]
 	I --> I3[train/]
-	I3 --> I31[images/]
-	I3 --> I32[labels/ (...)]
+	I3 --> I31[images folder]
+	I3 --> I32[labels folder with many files]
 ```
 
 ## Dataset Format
